@@ -1,11 +1,13 @@
 package fileConverter.model;
 
+import javax.swing.*;
 import java.util.Locale;
 
 public enum CutMode {
-    NONE(label: "No Cut Line"),
-    BOX(label: "Box around the art"),
-    OUTLINE(label: "Follow the art's outline");
+    NONE("No Cut Line"),
+    BOX("Box around the art"),
+    OUTLINE("Follow the art's outline");
+
 
     private final String label;
 
@@ -29,5 +31,6 @@ public enum CutMode {
                 }
             }
         }
+        return BOX;
     }
 }
